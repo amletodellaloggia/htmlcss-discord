@@ -344,3 +344,22 @@ ul li {
   font-size: 1rem;
   font-weight: bold;
 } */
+
+.selected-language {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bolder;
+	
+}
+
+.fa-brands{
+	color: white;
+	padding-right: 10px;
+	padding-top: 10px;
+
+}
+
+.language-selection {
+	display: flex;
+	align-items: center;
+}
