@@ -254,6 +254,7 @@ ul li {
   /* display: flex; */
   /* flex-direction: column; */
   width: 15%;
+  align-items: flex-start;
   /* height: 90%; */
   /* border: 2px dashed white; */
 }
@@ -294,7 +295,14 @@ ul li {
  margin: auto;
  display: flex;
  justify-content: center;
- align-items: center;
+ align-items: flex-start;
+}
+
+.footer-divided-container-bottom {
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
 }
 
 .w-100 {
@@ -321,7 +329,7 @@ ul li {
   background-color: transparent;
   font-size: 1rem;
   font-weight: bold;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 /* .ul-foot+li {
