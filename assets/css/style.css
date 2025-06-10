@@ -1,41 +1,45 @@
 /* CSS Reset */
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Utils */
 
 hr {
-	border: 2px solid gray;
+  border: 2px solid gray;
+}
+
+h1 {
+  display: flex;
 }
 
 /* Utils > Placement */
 
 .justify-end {
-	justify-content: flex-end;
-	align-items: center;
-	
+  justify-content: flex-end;
+  align-items: center;
 }
 .justify-center {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .justify-start {
-	justify-content: flex-start;
-	align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 
 /* Utils > Badges */
 
-.badge, .badge-white, .badge-grey{
-  font-size: .8rem;
+.badge,
+.badge-white,
+.badge-grey, .badge-lavender {
+  font-size: 0.8rem;
   border-radius: 45px;
   padding: 10px 20px;
   margin-left: 10px;
@@ -46,138 +50,141 @@ hr {
 .badge-white {
   color: #323332;
   background-color: white;
-
 }
 .badge-grey {
   color: white;
   background-color: #323332;
 }
+.badge-lavender {
+  color: white;
+  background-color: #8EA1E1;
+}
 
 /* Utils > Colours */
 
 .bg-gray {
-	background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
 .bg-lightpink {
-	background-color: #FFC0CA;
+  background-color: #ffc0ca;
 }
 
 .bg-dodgerblue {
-	background-color: #1E90FF;
+  background-color: #1e90ff;
 }
 
 .bg-green {
-	background-color: #218B21;
+  background-color: #218b21;
 }
 
 .bg-darkgray {
-	background-color: #23272A;
+  background-color: #23272a;
 }
 
 .bg-salmon {
-	background-color: #F08180;
+  background-color: #f08180;
 }
 
 .bg-teal {
-	background-color: #20B3AA;
+  background-color: #20b3aa;
 }
 
 .bg-aqua {
-	background-color: #7FFFD4;
+  background-color: #7fffd4;
 }
 
 .bg-white {
-	background-color: white;
+  background-color: white;
 }
 
 .text-white {
-	color: white;
+  color: white;
+}
+
+.text-darkgray {
+  color: #23272a;
 }
 
 /* Header */
 
 header {
-	background-color: #255EE9;
-	/* padding-bottom: 5px; */
+  background-color: #255ee9;
+  /* padding-bottom: 5px; */
 }
 
 .full-width-container {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.header-navbar{
-	display: flex;
-	flex-wrap: wrap;
-	/* background-color: #DAA51E; */
-	width: 60%;
-	height: 50px;
-	margin: 20px auto;
+.header-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #DAA51E; */
+  width: 60%;
+  height: 50px;
+  margin: 20px auto;
 }
 
-.logo, .link, .login{
-	display: flex;
-	/* justify-content: space-around; */
-	padding: 10px;
-	/* border: 2px dashed black; */
+.logo,
+.link,
+.login {
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 10px;
+  /* border: 2px dashed black; */
 }
 
 ul {
-	display: flex;
-	list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 ul li {
-	padding: 10px;
-	color: #ffffff;
-  	background-color: transparent;
-  	font-size: 1rem;
-  	font-weight: bold;
+  padding: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
 }
-
 
 .w-50 {
-	height: 100%;
-	width: 50%;
+  height: 100%;
+  width: 50%;
 }
 .w-25 {
-	height: 100%;
-	width: 25%;
+  height: 100%;
+  width: 25%;
 }
-
-
 
 /* Jumbotron & Jumbotron Panel */
 
-.jumbotron{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	/* align-items: center; */
-	/* background-color: #00018B; */
-	padding: 10px 0px 10px 0px;
-	background-image: url(../img/jumbo.png);
-	background-size: cover;
-	height: 500px;
-	width: 100%;
+.jumbotron {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* background-color: #00018B; */
+  padding: 10px 0px 10px 0px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
 }
 
 .jumbotron-panel {
-	/* background-color: #EF82ED; */
-	/* border: 2px dashed black; */
-	width: 35%;
-	height: 100%;
-	display: flex;
-    flex-wrap: wrap;
-    /* align-content: space-around; */
-    justify-content: center;
-	
-}
-
-p {
-	co
+  /* background-color: #EF82ED; */
+  /* border: 2px dashed black; */
+  gap: 25px;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: space-around; */
+  justify-content: center;
+  align-content: center;
 }
 
 /* Main */
@@ -185,64 +192,73 @@ p {
 /* Sezione Container con Contenitori Alternati */
 
 .divided-container {
-	display: flex;
-	width: 60%;
-	height: 700px;
+  display: flex;
+  width: 60%;
+  height: 700px;
 }
 
-.w-60, .w-40 {
-	align-self: center;
-	border: 2px dashed black;
+.w-60,
+.w-40 {
+  align-self: center;
+  /* border: 2px dashed black; */
 }
 
 .w-100 {
-	width: 100%;
-	height: 90%;
-	border: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 2px dashed black; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .w-60 {
-	width: 60%;
-	height: 90%;
-
+  display: flex;
+  width: 60%;
+  height: 52%;
 }
 
 .w-40 {
-	width: 40%;
-	height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 25%;
+  height: 90%;
 }
 
 /* Footer */
 
 .w-15 {
-	width: 15%;
-	height: 90%;
-	border: 2px dashed white;
+  width: 15%;
+  height: 90%;
+  border: 2px dashed white;
 }
 
 .w-60footer {
-	display: flex;
-	justify-content: flex-end;
-	width: 60%;
-	height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  height: 50px;
 }
 
 .footer-end-container {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
 }
 
-.logo-footer, .bottone-footer {
-	border: 2px dashed black;
+.logo-footer,
+.bottone-footer {
+  border: 2px dashed black;
 }
 
 .footer-full-width-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	width: 100%;
-	height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 100%;
+  height: 70px;
 }
