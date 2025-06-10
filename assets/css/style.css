@@ -42,6 +42,11 @@ h1 {
 
 /* Utils > Badges */
 
+.download-badges-container {
+	display: flex;
+}
+
+
 .badge,
 .badge-white,
 .badge-grey, .badge-lavender {
@@ -49,8 +54,8 @@ h1 {
   border-radius: 45px;
   padding: 10px 20px;
   margin-left: 10px;
-  margin-right: 10px;
-  height: 35px;
+  /* margin-right: 10px; */
+  /* height: 35px; */
 }
 
 .badge-white {
@@ -134,7 +139,7 @@ header {
   flex-wrap: wrap;
   /* background-color: #DAA51E; */
   width: 60%;
-  height: 50px;
+  /* height: 50px; */
   margin: 20px auto;
 }
 
@@ -170,11 +175,11 @@ ul li {
 }
 
 .w-50 {
-  height: 100%;
+  /* height: 100%; */
   width: 50%;
 }
 .w-25 {
-  height: 100%;
+  /* height: 100%; */
   width: 25%;
 }
 
@@ -189,7 +194,7 @@ ul li {
   padding: 10px 0px 10px 0px;
   background-image: url(../img/jumbo.png);
   background-size: cover;
-  height: 500px;
+  /* height: 500px; */
   width: 100%;
 }
 
@@ -198,7 +203,7 @@ ul li {
   /* border: 2px dashed black; */
   gap: 25px;
   width: 35%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-wrap: wrap;
   /* align-content: space-around; */
@@ -211,9 +216,10 @@ ul li {
 /* Sezione Container con Contenitori Alternati */
 
 .divided-container {
-  display: flex;
-  width: 60%;
-  height: 700px;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 /* .w-60, */
@@ -222,20 +228,12 @@ ul li {
   /* border: 2px dashed black;
 }
 
-.w-100 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  /* border: 2px dashed black; */
-  /* align-content: center;
-  justify-content: center;
-  align-items: center;
-} */
+
 
 .w-60 {
   display: flex;
   width: 60%;
-  height: 52%;
+  /* height: 52%;
 }
 
 .w-40 {
@@ -245,7 +243,7 @@ ul li {
   align-content: center;
   width: 25%;
   height: 90%;
-}
+
 
 
 
@@ -256,7 +254,7 @@ ul li {
   display: flex;
   flex-direction: column;
   width: 15%;
-  height: 90%;
+  /* height: 90%; */
   /* border: 2px dashed white; */
 }
 
@@ -266,7 +264,7 @@ ul li {
     justify-content: flex-start;
     align-content: center;
     width: 40%;
-    height: 90%;
+    /* height: 90%; */
 	padding: 20px;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -277,7 +275,7 @@ ul li {
   display: flex;
   justify-content: flex-end;
   width: 60%;
-  height: 50px;
+  /* height: 50px; */
 }
 
 .footer-end-container {
@@ -292,11 +290,23 @@ ul li {
   border: 2px dashed black;
 }
 
-.footer-full-width-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  width: 100%;
-  height: 70px;
+.footer-divided-container-top {
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
+.w-100 {
+	margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.generic-container {
+	max-width: 1200px;
+}
