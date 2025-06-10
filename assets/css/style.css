@@ -251,8 +251,8 @@ ul li {
 /* Footer */
 
 .w-15 {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   width: 15%;
   /* height: 90%; */
   /* border: 2px dashed white; */
@@ -310,3 +310,25 @@ ul li {
 .generic-container {
 	max-width: 1200px;
 }
+
+
+.ul-foot {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+/* .ul-foot+li {
+  display: flex;
+  padding: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+} */
